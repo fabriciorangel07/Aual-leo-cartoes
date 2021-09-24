@@ -1,7 +1,3 @@
-/*export default _ => (
-
-)*/
-
 import React from "react"
 import './App.css'
 import Cartao from "./layout/Cartao";
@@ -9,12 +5,22 @@ import Componente1 from './componentes/PrimeiroCom';
 import Componente2 from './componentes/SegundoCom';
 import Aluno from './componentes/Aluno';
 import CompAleatorio from './componentes/ComAleatorio';
+import Familia from "./componentes/familia";
+import Membro from "./componentes/FamiliaMembro";
 
 const App = () => {
     return (
         <div className="App">
             <h2>Fundamentos</h2>
             <div className="Cartoes">
+
+                <Cartao titulo = "POO"
+                    color = "#8AA">
+                        <Familia nome = "João" sobrenome = "Costa"/>
+                        <Familia nome = "Ana" sobrenome = "Costa"/>
+                        <Familia nome = "Marcos" sobrenome = "Costa"/>
+                </Cartao>
+
                 <Cartao titulo="Primeiro Componente"
                     color = '#FB2'
                     radio = {20}>
